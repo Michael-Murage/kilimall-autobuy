@@ -20,17 +20,17 @@ const buyNow = document.getElementById('buyNow');
 
 async function buy() {
   try {
-    const addressResp = await fetch('https://api.kilimall.com/ke/v1/user/address', {
-      headers: {
-        'content-type': 'application/json',
-        accept: 'application/json',
-        'authorization': bearer,
-      },
-      method: 'POST',
-      body: JSON.stringify({
-        action: 'select'
-      })
-    });
+    // const addressResp = await fetch('https://api.kilimall.com/ke/v1/user/address', {
+    //   headers: {
+    //     'content-type': 'application/json',
+    //     accept: 'application/json',
+    //     'authorization': bearer,
+    //   },
+    //   method: 'POST',
+    //   body: JSON.stringify({
+    //     action: 'select'
+    //   })
+    // });
 
     const buyDataResp = await fetch('https://api.kilimall.com/ke/v1/user/buyData', {
       headers: {
